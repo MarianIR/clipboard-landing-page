@@ -1,0 +1,531 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,400;0,600;1,400;1,600&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 10px;
+}
+
+body {
+  width: 100%;
+  color: #fbfbfb;
+}
+
+.header-section {
+  width: 100%;
+  background-image: url("../images/bg-header-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 5rem;
+}
+@media (min-width: 768px) {
+  .header-section {
+    background-image: url("../images/bg-header-desktop.png");
+  }
+}
+.header-section .logo {
+  display: block;
+  margin: auto;
+  padding-top: 10rem;
+  width: 10rem;
+  height: 20rem;
+}
+.header-section .header-article {
+  width: 100%;
+  text-align: center;
+}
+.header-section .header-article .header-heading {
+  display: block;
+  margin: 4rem auto 2rem;
+  padding: 1rem;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  color: hsl(210, 10%, 33%);
+}
+.header-section .header-article .header-paragraph {
+  display: block;
+  margin: auto;
+  padding: 1rem;
+  font-size: clamp(1.8rem, 6vw, 2.5rem);
+  line-height: 1.5;
+  color: hsl(201, 11%, 66%);
+  max-width: 80rem;
+}
+.header-section .download-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+@media (min-width: 768px) {
+  .header-section .download-container {
+    display: flex;
+    flex-direction: row;
+    max-width: 70rem;
+  }
+}
+.header-section .download-container .download-ios {
+  display: block;
+  margin: 1rem auto;
+  padding: 1.3rem;
+  width: 90%;
+  max-width: 40rem;
+  border-radius: 5rem;
+  border: none;
+  color: #fdfdfd;
+  font-size: 1.8rem;
+  font-weight: bold;
+  background-color: hsl(171, 66%, 44%);
+  box-shadow: 0px 5px 0px 0px #248a31;
+}
+.header-section .download-container .download-ios:hover {
+  cursor: pointer;
+  transition: 0.4s;
+}
+@media (min-width: 768px) {
+  .header-section .download-container .download-ios {
+    max-width: 30rem;
+  }
+}
+.header-section .download-container .download-ios:hover {
+  background-color: #63d7b5;
+}
+.header-section .download-container .download-mac {
+  display: block;
+  margin: 1rem auto;
+  padding: 1.3rem;
+  width: 90%;
+  max-width: 40rem;
+  border-radius: 5rem;
+  border: none;
+  color: #fdfdfd;
+  font-size: 1.8rem;
+  font-weight: bold;
+  background-color: hsl(233, 100%, 69%);
+  box-shadow: 0px 5px 0px 0px #2e2adb;
+}
+.header-section .download-container .download-mac:hover {
+  cursor: pointer;
+  transition: 0.4s;
+}
+@media (min-width: 768px) {
+  .header-section .download-container .download-mac {
+    max-width: 30rem;
+  }
+}
+.header-section .download-container .download-mac:hover {
+  background-color: #8987ff;
+}
+
+.main-section {
+  width: 100%;
+}
+.main-section .keep-track {
+  width: 100%;
+  padding: 1rem;
+}
+.main-section .keep-track .keep-track-article {
+  width: 100%;
+  text-align: center;
+}
+.main-section .keep-track .keep-track-article .keep-track-heading {
+  display: block;
+  margin: 4rem auto 2rem;
+  padding: 1rem;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  color: hsl(210, 10%, 33%);
+}
+.main-section .keep-track .keep-track-article .keep-track-paragraph {
+  display: block;
+  margin: auto;
+  padding: 1rem;
+  font-size: clamp(1.8rem, 6vw, 2.5rem);
+  line-height: 1.5;
+  color: hsl(201, 11%, 66%);
+  max-width: 80rem;
+}
+.main-section .keep-track .pachage {
+  width: 100%;
+  margin: 2rem auto;
+}
+@media (min-width: 768px) {
+  .main-section .keep-track .pachage {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+.main-section .keep-track .pachage .computer {
+  display: block;
+  margin: auto;
+  width: 90%;
+  max-width: 50rem;
+  height: auto;
+}
+@media (min-width: 768px) {
+  .main-section .keep-track .pachage .computer {
+    max-width: 40%;
+    margin-top: 2rem;
+  }
+}
+.main-section .keep-track .pachage .features {
+  width: 100%;
+  padding: 1rem;
+}
+@media (min-width: 768px) {
+  .main-section .keep-track .pachage .features {
+    width: 50%;
+    margin-top: 2rem;
+  }
+}
+.main-section .keep-track .pachage .features .feature {
+  width: 100%;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .main-section .keep-track .pachage .features .feature {
+    text-align: left;
+    max-width: 65rem;
+  }
+}
+.main-section .keep-track .pachage .features .feature .feature-heading {
+  display: block;
+  margin: 4rem auto 2rem;
+  padding: 1rem;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  color: hsl(210, 10%, 33%);
+  margin: 2rem auto 0;
+}
+@media (min-width: 768px) {
+  .main-section .keep-track .pachage .features .feature .feature-heading {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+  }
+}
+.main-section .keep-track .pachage .features .feature .feature-paragraph {
+  display: block;
+  margin: auto;
+  padding: 1rem;
+  font-size: clamp(1.8rem, 6vw, 2.5rem);
+  line-height: 1.5;
+  color: hsl(201, 11%, 66%);
+}
+@media (min-width: 768px) {
+  .main-section .keep-track .pachage .features .feature .feature-paragraph {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+  }
+}
+.main-section .access-clipboard {
+  width: 100%;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+.main-section .access-clipboard .access-clipboard-heading {
+  display: block;
+  margin: 4rem auto 2rem;
+  padding: 1rem;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  color: hsl(210, 10%, 33%);
+  text-align: center;
+}
+.main-section .access-clipboard .access-clipboard-paragraph {
+  display: block;
+  margin: auto;
+  padding: 1rem;
+  font-size: clamp(1.8rem, 6vw, 2.5rem);
+  line-height: 1.5;
+  color: hsl(201, 11%, 66%);
+  text-align: center;
+  max-width: 70rem;
+}
+.main-section .access-clipboard .devices {
+  display: block;
+  margin: auto;
+  width: 90%;
+  max-width: 50rem;
+  height: auto;
+  margin-top: 6rem;
+  max-width: 80rem;
+}
+.main-section .supercharge-workflow {
+  width: 100%;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+.main-section .supercharge-workflow .workflow-article {
+  width: 100%;
+}
+.main-section .supercharge-workflow .workflow-article .workflow-heading {
+  display: block;
+  margin: 4rem auto 2rem;
+  padding: 1rem;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  color: hsl(210, 10%, 33%);
+  text-align: center;
+}
+.main-section .supercharge-workflow .workflow-article .workflow-paragraph {
+  display: block;
+  margin: auto;
+  padding: 1rem;
+  font-size: clamp(1.8rem, 6vw, 2.5rem);
+  line-height: 1.5;
+  color: hsl(201, 11%, 66%);
+  text-align: center;
+}
+.main-section .supercharge-workflow .tools {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .main-section .supercharge-workflow .tools {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+.main-section .supercharge-workflow .tools .create-blacklist, .main-section .supercharge-workflow .tools .sneak-preview, .main-section .supercharge-workflow .tools .plain-snippets {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+}
+@media (min-width: 768px) {
+  .main-section .supercharge-workflow .tools .create-blacklist, .main-section .supercharge-workflow .tools .sneak-preview, .main-section .supercharge-workflow .tools .plain-snippets {
+    max-width: 40rem;
+    margin-right: 3rem;
+  }
+}
+.main-section .supercharge-workflow .tools .create-blacklist .blacklist-icon, .main-section .supercharge-workflow .tools .sneak-preview .blacklist-icon, .main-section .supercharge-workflow .tools .plain-snippets .blacklist-icon {
+  width: 4rem;
+  height: 4rem;
+}
+.main-section .supercharge-workflow .tools .create-blacklist .blacklist-heading, .main-section .supercharge-workflow .tools .sneak-preview .blacklist-heading, .main-section .supercharge-workflow .tools .sneak-preview .preview-heading, .main-section .supercharge-workflow .tools .plain-snippets .blacklist-heading, .main-section .supercharge-workflow .tools .plain-snippets .snippets-heading {
+  display: block;
+  margin: 4rem auto 2rem;
+  padding: 1rem;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  color: hsl(210, 10%, 33%);
+  text-align: center;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .main-section .supercharge-workflow .tools .create-blacklist .blacklist-heading, .main-section .supercharge-workflow .tools .sneak-preview .blacklist-heading, .main-section .supercharge-workflow .tools .sneak-preview .preview-heading, .main-section .supercharge-workflow .tools .plain-snippets .blacklist-heading, .main-section .supercharge-workflow .tools .plain-snippets .snippets-heading {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+  }
+}
+.main-section .supercharge-workflow .tools .create-blacklist .blacklist-paragraph, .main-section .supercharge-workflow .tools .sneak-preview .blacklist-paragraph, .main-section .supercharge-workflow .tools .sneak-preview .preview-paragraph, .main-section .supercharge-workflow .tools .plain-snippets .blacklist-paragraph, .main-section .supercharge-workflow .tools .plain-snippets .snippets-paragraph {
+  display: block;
+  margin: auto;
+  padding: 1rem;
+  font-size: clamp(1.8rem, 6vw, 2.5rem);
+  line-height: 1.5;
+  color: hsl(201, 11%, 66%);
+  text-align: center;
+  margin: 0 auto;
+  max-width: 70rem;
+}
+@media (min-width: 768px) {
+  .main-section .supercharge-workflow .tools .create-blacklist .blacklist-paragraph, .main-section .supercharge-workflow .tools .sneak-preview .blacklist-paragraph, .main-section .supercharge-workflow .tools .sneak-preview .preview-paragraph, .main-section .supercharge-workflow .tools .plain-snippets .blacklist-paragraph, .main-section .supercharge-workflow .tools .plain-snippets .snippets-paragraph {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+  }
+}
+.main-section .supercharge-workflow .tools .plain-snippets .snippets-icon {
+  width: 4rem;
+  height: 4rem;
+}
+.main-section .supercharge-workflow .tools .sneak-preview .preview-icon {
+  width: 4rem;
+  height: 4rem;
+}
+.main-section .supercharge-workflow .companies {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 1024px) {
+  .main-section .supercharge-workflow .companies {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.main-section .supercharge-workflow .companies .company {
+  margin: 3rem auto;
+  width: 15rem;
+  height: 4rem;
+}
+.main-section .supercharge-workflow .clipboard {
+  width: 100%;
+  margin: 4rem auto;
+  padding: 1rem;
+  text-align: center;
+}
+.main-section .supercharge-workflow .clipboard .clipboard-heading {
+  display: block;
+  margin: 4rem auto 2rem;
+  padding: 1rem;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  color: hsl(210, 10%, 33%);
+}
+.main-section .supercharge-workflow .clipboard .clipboard-paragraph {
+  display: block;
+  margin: auto;
+  padding: 1rem;
+  font-size: clamp(1.8rem, 6vw, 2.5rem);
+  line-height: 1.5;
+  color: hsl(201, 11%, 66%);
+  max-width: 80rem;
+}
+.main-section .supercharge-workflow .clipboard .download-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+@media (min-width: 768px) {
+  .main-section .supercharge-workflow .clipboard .download-container {
+    display: flex;
+    flex-direction: row;
+    max-width: 70rem;
+  }
+}
+.main-section .supercharge-workflow .clipboard .download-container .download-ios {
+  display: block;
+  margin: 1rem auto;
+  padding: 1.3rem;
+  width: 90%;
+  max-width: 40rem;
+  border-radius: 5rem;
+  border: none;
+  color: #fdfdfd;
+  font-size: 1.8rem;
+  font-weight: bold;
+  background-color: hsl(171, 66%, 44%);
+  box-shadow: 0px 5px 0px 0px #248a31;
+}
+.main-section .supercharge-workflow .clipboard .download-container .download-ios:hover {
+  cursor: pointer;
+  transition: 0.4s;
+}
+@media (min-width: 768px) {
+  .main-section .supercharge-workflow .clipboard .download-container .download-ios {
+    max-width: 30rem;
+  }
+}
+.main-section .supercharge-workflow .clipboard .download-container .download-ios:hover {
+  background-color: #63d7b5;
+}
+.main-section .supercharge-workflow .clipboard .download-container .download-mac {
+  display: block;
+  margin: 1rem auto;
+  padding: 1.3rem;
+  width: 90%;
+  max-width: 40rem;
+  border-radius: 5rem;
+  border: none;
+  color: #fdfdfd;
+  font-size: 1.8rem;
+  font-weight: bold;
+  background-color: hsl(233, 100%, 69%);
+  box-shadow: 0px 5px 0px 0px #2e2adb;
+}
+.main-section .supercharge-workflow .clipboard .download-container .download-mac:hover {
+  cursor: pointer;
+  transition: 0.4s;
+}
+@media (min-width: 768px) {
+  .main-section .supercharge-workflow .clipboard .download-container .download-mac {
+    max-width: 30rem;
+  }
+}
+.main-section .supercharge-workflow .clipboard .download-container .download-mac:hover {
+  background-color: #8987ff;
+}
+
+.footer-section {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f1f1f1;
+}
+@media (min-width: 768px) {
+  .footer-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+.footer-section .logo {
+  width: 7rem;
+  height: 7rem;
+}
+.footer-section .informations {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .footer-section .informations {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    justify-items: start;
+  }
+}
+.footer-section .informations div {
+  font-size: 1.8rem;
+  color: hsl(210, 10%, 33%);
+  margin: 2rem;
+}
+.footer-section .informations div:hover {
+  cursor: pointer;
+  color: #09c57d;
+  transition: 0.4s;
+}
+.footer-section .social-media {
+  margin: 4rem auto;
+  width: 100%;
+  display: flex;
+  flex: auto;
+  justify-content: space-evenly;
+}
+@media (min-width: 768px) {
+  .footer-section .social-media {
+    max-width: 40rem;
+    margin: 4rem 0;
+  }
+}
+.footer-section .social-media .social-media-icon {
+  width: 3rem;
+  height: 3rem;
+}
+.footer-section .social-media .social-media-icon:hover {
+  cursor: pointer;
+  transition: 0.4s;
+}
+.footer-section .social-media .social-media-icon:host {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  contain: strict;
+  fill: hsl(171, 66%, 44%);
+  box-sizing: content-box !important;
+}
+
+.attribution {
+  margin: 5rem auto;
+  text-align: center;
+  font-size: 1.8rem;
+  color: hsl(210, 10%, 33%);
+}
+.attribution a {
+  cursor: pointer;
+  color: hsl(228, 45%, 44%);
+}/*# sourceMappingURL=main.css.map */

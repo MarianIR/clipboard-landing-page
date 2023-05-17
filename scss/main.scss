@@ -1,0 +1,354 @@
+@import "variables", "reset", "mixin";
+
+body {
+  width: 100%;
+  color: #fbfbfb;
+}
+
+// header section
+.header-section {
+  width: 100%;
+  background-image: url("../images/bg-header-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 5rem;
+  @media (min-width: 768px) {
+    background-image: url("../images/bg-header-desktop.png");
+  }
+  .logo {
+    display: block;
+    margin: auto;
+    padding-top: 10rem;
+    width: 10rem;
+    height: 20rem;
+  }
+  .header-article {
+    width: 100%;
+    text-align: center;
+    .header-heading {
+      display: block;
+      margin: 4rem auto 2rem;
+      padding: 1rem;
+      font-size: clamp(2.5rem, 6vw, 4rem);
+      color: $neutralColor1;
+    }
+    .header-paragraph {
+      display: block;
+      margin: auto;
+      padding: 1rem;
+      font-size: clamp($fontSize, 6vw, 2.5rem);
+      line-height: 1.5;
+      color: $neutralColor2;
+      max-width: 80rem;
+    }
+  }
+  .download-container {
+    @include downloadContainer;
+
+    .download-ios {
+      @include button;
+      background-color: $primaryColor1;
+      box-shadow: 0px 5px 0px 0px #248a31;
+      &:hover {
+        background-color: #63d7b5;
+      }
+    }
+    .download-mac {
+      @include button;
+      background-color: $primaryColor2;
+      box-shadow: 0px 5px 0px 0px #2e2adb;
+      &:hover {
+        background-color: #8987ff;
+      }
+    }
+  }
+}
+// header section
+//////////////
+.main-section {
+  width: 100%;
+  .keep-track {
+    width: 100%;
+    padding: 1rem;
+    .keep-track-article {
+      width: 100%;
+      text-align: center;
+      .keep-track-heading {
+        @include heading;
+      }
+      .keep-track-paragraph {
+        @include paragraph;
+        max-width: 80rem;
+      }
+    }
+    .pachage {
+      width: 100%;
+      margin: 2rem auto;
+      @media (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+      .computer {
+        @include image;
+        @media (min-width: 768px) {
+          max-width: 40%;
+          margin-top: 2rem;
+        }
+      }
+      .features {
+        width: 100%;
+        padding: 1rem;
+        @media (min-width: 768px) {
+          width: 50%;
+          margin-top: 2rem;
+        }
+        .feature {
+          width: 100%;
+          text-align: center;
+          @media (min-width: 768px) {
+            text-align: left;
+            max-width: 65rem;
+          }
+          .feature-heading {
+            @include heading;
+            margin: 2rem auto 0;
+            @media (min-width: 768px) {
+              font-size: clamp($fontSize, 4vw, 2.5rem);
+            }
+          }
+          .feature-paragraph {
+            @include paragraph;
+            @media (min-width: 768px) {
+              font-size: clamp(1.5rem, 4vw, 2rem);
+            }
+          }
+        }
+      }
+    }
+  }
+  .access-clipboard {
+    width: 100%;
+    margin: 2rem auto;
+    padding: 1rem;
+    .access-clipboard-heading {
+      @include heading;
+      text-align: center;
+    }
+    .access-clipboard-paragraph {
+      @include paragraph;
+      text-align: center;
+      max-width: 70rem;
+    }
+    .devices {
+      @include image;
+      margin-top: 6rem;
+      max-width: 80rem;
+    }
+  }
+  .supercharge-workflow {
+    width: 100%;
+    margin: 2rem auto;
+    padding: 1rem;
+    .workflow-article {
+      width: 100%;
+      .workflow-heading {
+        @include heading;
+        text-align: center;
+      }
+      .workflow-paragraph {
+        @include paragraph;
+        text-align: center;
+      }
+    }
+    .tools {
+      width: 100%;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      @media (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+      .create-blacklist {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 4rem;
+        @media (min-width: 768px) {
+          max-width: 40rem;
+          margin-right: 3rem;
+        }
+        .blacklist-icon {
+          @include icon;
+        }
+        .blacklist-heading {
+          @include heading;
+          text-align: center;
+          margin: 0 auto;
+          @media (min-width: 768px) {
+            font-size: clamp($fontSize, 4vw, 2.5rem);
+          }
+        }
+        .blacklist-paragraph {
+          @include paragraph;
+          text-align: center;
+          margin: 0 auto;
+          max-width: 70rem;
+          @media (min-width: 768px) {
+            font-size: clamp(1.5rem, 4vw, 2rem);
+          }
+        }
+      }
+      .plain-snippets {
+        @extend .create-blacklist;
+        .snippets-icon {
+          @include icon;
+        }
+        .snippets-heading {
+          @extend .blacklist-heading;
+        }
+        .snippets-paragraph {
+          @extend .blacklist-paragraph;
+        }
+      }
+      .sneak-preview {
+        @extend .create-blacklist;
+        .preview-icon {
+          @include icon;
+        }
+        .preview-heading {
+          @extend .blacklist-heading;
+        }
+        .preview-paragraph {
+          @extend .blacklist-paragraph;
+        }
+      }
+    }
+    .companies {
+      width: 100%;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @media (min-width: 1024px) {
+        display: flex;
+        flex-direction: row;
+      }
+      .company {
+        margin: 3rem auto;
+        width: 15rem;
+        height: 4rem;
+      }
+    }
+    .clipboard {
+      width: 100%;
+      margin: 4rem auto;
+      padding: 1rem;
+      text-align: center;
+      .clipboard-heading {
+        @include heading;
+      }
+      .clipboard-paragraph {
+        @include paragraph;
+        max-width: 80rem;
+      }
+      .download-container {
+        @include downloadContainer;
+        .download-ios {
+          @include button;
+          background-color: $primaryColor1;
+          box-shadow: 0px 5px 0px 0px #248a31;
+          &:hover {
+            background-color: #63d7b5;
+          }
+        }
+        .download-mac {
+          @include button;
+          background-color: $primaryColor2;
+
+          box-shadow: 0px 5px 0px 0px #2e2adb;
+          &:hover {
+            background-color: #8987ff;
+          }
+        }
+      }
+    }
+  }
+}
+////////////
+// footer section
+.footer-section {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f1f1f1;
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .logo {
+    width: 7rem;
+    height: 7rem;
+  }
+  .informations {
+    text-align: center;
+    @media (min-width: 768px) {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-template-rows: auto auto;
+      justify-items: start;
+    }
+    div {
+      font-size: $fontSize;
+      color: $neutralColor1;
+      margin: 2rem;
+      &:hover {
+        cursor: pointer;
+        color: #09c57d;
+        transition: 0.4s;
+      }
+    }
+  }
+  .social-media {
+    margin: 4rem auto;
+    width: 100%;
+    display: flex;
+    flex: auto;
+    justify-content: space-evenly;
+    @media (min-width: 768px) {
+      max-width: 40rem;
+      margin: 4rem 0;
+    }
+    .social-media-icon {
+      width: 3rem;
+      height: 3rem;
+      &:hover {
+        cursor: pointer;
+        transition: 0.4s;
+      }
+      &:host {
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        contain: strict;
+        fill: $primaryColor1;
+        box-sizing: content-box !important;
+      }
+    }
+  }
+}
+.attribution {
+  margin: 5rem auto;
+  text-align: center;
+  font-size: $fontSize;
+  color: $neutralColor1;
+  a {
+    cursor: pointer;
+    color: hsl(228, 45%, 44%);
+  }
+}
